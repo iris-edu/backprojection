@@ -1,0 +1,63 @@
+ 
+ Incorporated Research Institutions for Seismology (IRIS)
+ Data Management Center (DMC)
+ Data Products Team
+ BackProjection Data Product
+
+ 2021-11-01
+
+------------------------------------------------------------------------------------------------------------------------
+
+ DESCRIPTION:
+
+    This is the Python 3 code behind the IRIS DMC's BackProjection Data product (http://ds.iris.edu/spud/backprojection)
+    and it can producing the individual plots and animations that are part of the BackProjection  product
+    (http://ds.iris.edu/spud/backprojection).
+
+    The code can be configured via its parameter file "back_projection_param.py" and via the command line arguments.
+    Currently parameters are optimized for use with four virtual networks defined in the parameter file.
+
+ PYTHON REQUIREMENTS:
+
+       - this package has been tested under Python 3.8.12 on macOS 11.6, and Linux CentOS-7 (may work with older
+         Python 3 versions)
+
+       - additional required Python module(s) with the tested version:
+             . basemap              (tested with version 1.2.2)
+             . obspy                (tested with version 1.2.2)
+             . ffmpeg               (tested with version 4.4.1)
+             . basemap-data-hires   (tested with version 1.2.2-0)
+
+ PACKAGE INSTALLATION:
+
+       unpack the package
+            . "src" directory contains the main code.
+            . The parameter file is under the "param" directory.
+            . "lib" directory has the library Python files.
+            . "assets" directory contains the global trenches data file used for plotting.
+
+ CONFIGURE THE PACKAGE:
+
+        With Python configured, you should be able to run the package examples without further modifications. However:
+        - if necessary, update the Python path on the first line of the src/aftershock_fdsn_maps.py
+        - if desired, configure the package by updating pthe aram/back_projection_param.py file
+        - package will create the following directories as needed:
+            data: output data files (station list and peak amplitude values)
+            image: output images
+            log: log directory
+            metadata: metadata directory (not used)
+            scratch: work directory (cleaned up after each run)
+            video: output videos and video screen shots
+
+ PACKAGE TEST:
+
+    Run src/src/back_projection_r2.py with "-h" option (assuming you have properly configured your Python
+    installation) and it will print a USAGE messages.
+
+    Run the first example (the low resolution example). This will take the code through all the steps. Check the image,
+    video and data directories for the outputs.
+
+
+
+
+
