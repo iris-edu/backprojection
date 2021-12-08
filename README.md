@@ -24,15 +24,16 @@ This package contains the following files:
 
      src/
        back_projection_r2.py
-           This is the main Python code behind the production of plots and animations. Calling the code with -h  
-           option displays a list of other options available to tune plot and animation production. It also 
-           provides examples to run.
+           This is the main Python code behind the production of plots and animations. Calling 
+           the code with -h option displays a list of other options available to tune plot and 
+           animation production. It also provides examples to run.
      
      param/
        back_projection_param.py
-           A Python file that contains all the BackProjection data product parameters. You may modify this file to 
-           customize virtual networks, plots and animations . All parameter definitions in this file must follow Python 
-           rules. Each parameter group in this file is commented for clarification.
+           A Python file that contains all the BackProjection data product parameters. You may 
+           modify this file to customize the virtual networks, plots and animations. All parameter 
+           definitions in this file must follow the Python rules. Each parameter group in this file 
+           is commented for clarification.
      
      lib/
        - back_projection_lib.py
@@ -58,7 +59,8 @@ To cite the use of this software reference:
 Trabant, C., A. R. Hutko, M. Bahavar, R. Karstens, T. Ahern, and R. Aster (2012), Data Products at the IRIS DMC: \
 Stepping Stones for Research and Other Applications, Seismological Research Letters, 83(5), 846–854, \
 https://doi.org/10.1785/0220120032.\
-\
+
+
 Or cite the following DOI:
 
     doi:10.17611/dp/bp.code.1
