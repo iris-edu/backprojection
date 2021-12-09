@@ -220,13 +220,13 @@ def usage():
           f'\t-f --factor\t\t[default: {grid_factor}] this parameter could be used for testing. '
           f'The grid spacing is {new_line}'
           f'\t\t\t\tmultiplied by this factor (-f 5 or -f 10 are reasonable choices) {new_line}'
-          f'\t\t\t\tand as a result the resolution is reduced and computation take place faster.{new_line}'
+          f'\t\t\t\tand as a result, resolution is reduced, and computation takes place faster.{new_line}'
           f'\t\t\t\tYou could use this option to '
           f'test your parameters before a production run.{new_line}{new_line}'
           f'Examples:{new_line}'
           f'\tlower resolution (faster, good for tuning parameters):{new_line}'
           f'\t\tpython src/{script} -m 7.8 -y 55.030 -x -158.522 -z 28 -n AU -t 2020-07-22T06:12:44 -l -f 5'
-          f'{new_line}{new_line}\thigher resolution (slower, for final product):{new_line}'
+          f'{new_line}{new_line}\thigher resolution (slower, for the final product):{new_line}'
           f'\t\tpython src/{script} -m 7.8 -y 55.030 -x -158.522 -z 28 -n AU -t 2020-07-22T06:12:44 -l'
           , file=sys.stdout, flush=True)
     print('\n\n', file=sys.stdout, flush=True)

@@ -71,7 +71,6 @@ except Exception as ex:
 # qtfaststart enables streaming and pseudo-streaming of QuickTime and
 # MP4 files by moving metadata and offset information to the beginning of the file.
 # set to None to disable.
-qtfaststart = '/opt/dmc/anaconda/64bit/bin/qtfaststart'
 qtfaststart = None
 
 # Time integration resampling, This is to speed up processing. Time integration will be performed at
@@ -155,27 +154,26 @@ font_size['image'] = {'label': 11, 'legend': 10, 'title': 14, 'time': 16, 'netwo
 fedcatalog_service_url = 'http://service.iris.edu/irisws/fedcatalog/1/query?'
 
 # Set sta_too_close_km <= 0 to disable sparsifying.
-# Virtual or reference networks [NetLat, fNetLon, fdisttooclosekm, statweightdist, cccmin1, cccmin2, statweightazi]
 vn_name = 'NA'
-virtual_networks = {'GSN': {'lat': -90.0, 'lon': 0.0, 'corners': (-90.0, -180.0, 90.0, 180.0), 'name': 'GSN Stations',
+virtual_networks = {'GSN': {'lat': -90.0, 'lon': 0.0, 'name': 'GSN Stations',
                     'color': 'red', 'marker': '^', 'ccc_min': (0.5, 0.55), 'network': '_GSN', 'xcorr_min': 0.45,
                             'max_sta_count': 300, 'sta_too_close_km': 0.0, 'sta_too_close_deg': 0.0,
                             'std_max': 0.3,
                             'sta_weight_dist': 500.0, 'sta_weight_azim': -1.0, 'sparse_patch_count': 4},
 
-                    'AU': {'lat': -24.3, 'lon': 134.4, 'corners': (-50.0, 90.0, 10.0, 175.0), 'name': 'Australia',
+                    'AU': {'lat': -24.3, 'lon': 134.4, 'name': 'Australia',
                            'color': 'red', 'marker': '^', 'ccc_min': (0.6, 0.65), 'network': '*', 'xcorr_min': 0.55,
                            'max_sta_count': 50, 'sta_too_close_km': 111.19, 'sta_too_close_deg': 2.0,
                            'std_max': 0.3,
                            'sta_weight_dist': 250.0, 'sta_weight_azim': -1.0, 'sparse_patch_count': 4},
 
-                    'NA': {'lat': 38.9, 'lon': -98.4, 'corners': (0.0, -150.0, 50.0, 0.0), 'name': 'North America',
+                    'NA': {'lat': 38.9, 'lon': -98.4, 'name': 'North America',
                            'color': 'red', 'marker': '^', 'ccc_min': (0.6, 0.65), 'network': '*', 'xcorr_min': 0.55,
                            'max_sta_count': 50, 'sta_too_close_km': 111.19, 'sta_too_close_deg': 2.0,
                            'std_max': 0.3,
                            'sta_weight_dist': 250.0, 'sta_weight_azim': -1.0, 'sparse_patch_count': 4},
 
-                    'EU': {'lat': 51.6, 'lon': 20.6, 'corners': (32.0, -10.0, 70.0, 60.0), 'name': 'Europe',
+                    'EU': {'lat': 51.6, 'lon': 20.6, 'name': 'Europe',
                            'color': 'red', 'marker': '^', 'ccc_min': (0.6, 0.65), 'network': '*', 'xcorr_min': 0.55,
                            'max_sta_count': 50, 'sta_too_close_km': 111.19, 'sta_too_close_deg': 2.0,
                            'std_max': 0.3,
