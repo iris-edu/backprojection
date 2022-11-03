@@ -9,7 +9,7 @@ This Python 3 package contains the code behind the creation of [BackProjection d
 
 ## Installation
 
-Either clone the repository or download a [release](https://github.com/iris-edu/emc-notebooks/releases) and unzip/untar it.
+Either clone the repository or download a [release](https://github.com/iris-edu/backprojection/releases) and unzip/untar it.
 
 ### Requirements
 
@@ -119,5 +119,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 Copyright (C) 2022 Manochehr Bahavar, IRIS Data Management Center
+
 
 
