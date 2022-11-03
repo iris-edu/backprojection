@@ -1,4 +1,7 @@
 
+requirements.txt, README, LICENSE, INSTALL.txt
+    2022-11-03 Manoch: v.2022.307 r2 Updated installation and license information. Added requirements document,
+    removed the INSTALLATION file and updated the LICENSE file.
 
 src/back_projection_r2.py
     2021-11-01 Manoch: v.2021.305 r2 (Python 3) data product release.
