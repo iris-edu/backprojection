@@ -1,4 +1,5 @@
 obspy >= 1.3.1
 basemap >= 1.3.6
+matplotlib==3.5.2
 basemap-data >= 1.3.2
 basemap-data-hires >= 1.3.2
